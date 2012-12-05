@@ -1,0 +1,48 @@
+<HTML>
+	<HEAD>
+		<TITLE>Indie No Go</TITLE>
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<link href='css/style.css' rel='stylesheet' type='text/css'>
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.backstretch.js"></script>
+		
+		<script type="text/javascript">
+
+			var images = [
+				{image: 'images/dance.jpg', url: 'http://www.flickr.com/photos/qxz/605743316/'},
+				{image: 'images/guitar_girl.jpg', url: 'http://www.flickr.com/photos/72213316@N00/5344820019/'},
+				{image: 'images/busquer.jpg', url: 'http://www.flickr.com/photos/jay_que/315498498/'},
+				{image: 'images/violin_girl.jpg', url: 'http://www.flickr.com/photos/haagsuitburo/2640811031/'},
+				{image: 'images/acordian_boy.jpg', url: 'http://www.flickr.com/photos/pierrebedat/1498133070/'},
+			];
+
+			$(document).ready(function() {
+				var pic = images[Math.floor(Math.random()*images.length)];
+		  		$.backstretch(pic.image, {centeredY: false, speed: 1000});
+		  		$("#image_credit").attr("href", pic.url);
+		  	});
+		</script>
+
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-36817455-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+		
+	</HEAD>
+	<BODY>
+		<div id="centerBox">
+			<h1>Indie No Go</h1>
+		</div>
+		<div id="footer"><a id="image_credit" href="#">image credit</a></div>
+	</BODY>
+</HTML>

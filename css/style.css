@@ -1,0 +1,39 @@
+body{
+	color: white;
+	font-family: 'Oswald', arial, serif; 
+	font-size: 20px;
+}
+
+h1 { 
+	font-size: 150px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+h2{ 
+	font-size: 30px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+#centerBox {
+	text-align: center;
+	width: 700px;
+	margin:0 auto;
+	margin-top: 12%;
+	padding: 20px;
+	background-color:rgba(200,2000,2000,0.5);
+	text-shadow: black 0.1em 0.1em 0.2em;
+	border-radius: 20px;
+}
+
+#footer {
+	font-size: 12px;
+	position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#footer a{
+	color: black;
+}
